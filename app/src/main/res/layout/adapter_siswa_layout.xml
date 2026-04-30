@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="14dp"
+        app:cardElevation="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/imgSiswa"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvNamaSiswa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="Nama Siswa"
+                android:textSize="20sp"
+                android:textStyle="bold"
+
+                app:layout_constraintStart_toEndOf="@id/imgSiswa"
+                app:layout_constraintEnd_toStartOf="@id/tvAbsenSiswa"
+                app:layout_constraintTop_toTopOf="@id/imgSiswa"
+                android:layout_marginStart="12dp"/>
+
+            <TextView
+                android:id="@+id/tvAbsenSiswa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Absen"
+                android:textAlignment="viewEnd"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/imgSiswa" />
+
+            <TextView
+                android:id="@+id/tvAlamatSiswa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:hint="Alamat Lengkap"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="@id/tvNamaSiswa"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tvNamaSiswa" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

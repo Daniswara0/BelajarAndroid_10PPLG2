@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="293dp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="160sp"
+        android:text="Welcome to our page!"
+        android:textSize="35sp"
+        android:shadowColor="#B84A4A"
+        android:shadowDx="4"
+        android:shadowDy="3"
+        android:shadowRadius="4"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"/>
+
+
+    <ImageView
+        android:layout_width="377dp"
+        android:layout_height="210dp"
+        android:src="@drawable/logo" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        app:cardCornerRadius="14dp"
+        app:cardElevation="6dp"
+        app:cardUseCompatPadding="true">
+
+        <EditText
+            android:id="@+id/edtUsernameLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:background="@android:color/transparent"
+            android:padding="14dp"/>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="14dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginBottom="15dp"
+        app:cardElevation="6dp"
+        app:cardUseCompatPadding="true">
+
+        <EditText
+            android:id="@+id/edtPasswordLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:background="@android:color/transparent"
+            android:padding="14dp"
+            android:inputType="textPassword"/>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:text="Sign In"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="8dp"
+        android:padding="10dp"
+        android:elevation="9dp"
+        android:translationZ="3dp"
+        android:backgroundTint="#F3FFA1BA"/>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:text="Sign Up"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF6991"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:padding="10dp"
+        android:elevation="9dp"
+        android:translationZ="3dp"/>
+
+
+
+</LinearLayout>
